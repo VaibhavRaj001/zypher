@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Drone Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a; /* Dark background for consistency */
+            color: #fff; /* White text for contrast */
+        }
+        header {
+            background: #222; /* Darker header background */
+            color: #fff;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul li {
+            margin: 0 1em;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        header nav ul li a:hover,
+        header nav ul li a.active {
+            color: #f4f4f4; /* Light hover effect */
+        }
+        .about {
+            padding: 2em;
+            background: #333; /* Consistent dark background */
+            margin: 5em auto 2em auto; /* Margin for spacing */
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .about h1 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: space-between;
+        }
+        .box {
+            background: #444; /* Darker box background */
+            border: 1px solid #555; /* Slightly lighter border */
+            border-radius: 8px;
+            padding: 1.5em;
+            flex: 1 1 calc(33.333% - 2em); /* Responsive boxes */
+            margin: 1em 0;
+            box-sizing: border-box;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none; /* Remove underline from link */
+            color: #fff; /* White text color */
+        }
+        .box:hover {
+            transform: scale(1.05); /* Slightly enlarge box on hover */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+        }
+        .box h2 {
+            margin-top: 0;
+        }
+        button {
+            display: block;
+            width: 200px;
+            margin: 2em auto;
+            padding: 0.75em;
+            font-size: 1em;
+            color: #fff;
+            background: #555; /* Consistent button background */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #666; /* Slightly lighter button hover */
+        }
+        footer {
+            background: #222; /* Consistent footer background */
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html" class="active">Project</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Page -->
+    <section class="about">
+        <h1>Technology Used</h1>
+        <p>In this project, we leveraged cutting-edge technologies to develop a robust solution for disaster assistance. Below is a breakdown of the main technologies used:</p>
+
+        <div class="box-container">
+            <!-- Drone Technology -->
+            <a href="contact.html" class="box">
+                <h2>Drone Technology</h2>
+                <p>We use state-of-the-art drones equipped with high-resolution cameras, GPS systems, and autonomous flight controls to scan and locate individuals in flood zones or disaster-affected areas.</p>
+            </a>
+
+            <!-- GPS and Geolocation Services -->
+            <a href="gps-geolocation.html" class="box">
+                <h2>GPS and Geolocation Services</h2>
+                <p>Our drones are integrated with GPS tracking to precisely detect and transmit the location of people needing rescue, which is then sent to the response teams in real time.</p>
+            </a>
+
+            <!-- Machine Learning -->
+            <a href="machine-learning.html" class="box">
+                <h2>Machine Learning</h2>
+                <p>Machine learning algorithms are utilized to identify and recognize human presence from aerial footage, even in difficult-to-spot locations like flooded areas or debris.</p>
+            </a>
+
+            <!-- Image Recognition -->
+            <a href="image-recognition.html" class="box">
+                <h2>Image Recognition</h2>
+                <p>Advanced image recognition technology allows our drones to differentiate between objects and humans, ensuring faster and more accurate rescues in disaster-struck regions.</p>
+            </a>
+
+            <!-- Real-time Data Processing -->
+            <a href="data-processing.html" class="box">
+                <h2>Real-time Data Processing</h2>
+                <p>Real-time data from drones is processed instantly using cloud infrastructure, allowing rescue teams to access real-time visuals and locations without delay.</p>
+            </a>
+
+            <!-- Web Technologies -->
+            <a href="web-technologies.html" class="box">
+                <h2>Web Technologies</h2>
+                <p>We have built a web platform to monitor the drone operations, view the live stream, and track real-time updates. Technologies such as HTML, CSS, JavaScript, and WebGL are used for the frontend, while backend services are handled using Node.js and cloud platforms.</p>
+            </a>
+
+            <!-- Communication Protocols -->
+            <a href="communication-protocols.html" class="box">
+                <h2>Communication Protocols</h2>
+                <p>Our project uses secure communication protocols (like MQTT) to transmit data between drones and the ground station, ensuring that information flows securely and swiftly.</p>
+            </a>
+        </div>
+
+        <button onclick="window.location.href='index.html#contact';">Get in Touch</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Drone Project. All rights reserved.</p>
+    </footer>
+
+    <!-- Include particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
