@@ -47,7 +47,7 @@ header nav ul li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('images/drone.jpg') no-repeat center center/cover;
+    background: url('drone.jpg') no-repeat center center/cover;
     position: relative;
 }
 
